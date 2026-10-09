@@ -1,0 +1,62 @@
+# ── Secrets and local config ─────────────────────────────────────────────────
+.env
+
+# ── Private planning documents (not part of the public repo) ─────────────────
+plan.txt
+phasebyphase.txt
+
+# ── Python runtime ────────────────────────────────────────────────────────────
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Pytest / test artefacts ───────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── EnergyPlus simulation output (root-level artefacts from manual test runs) ─
+eplusout.*
+eplusssz.csv
+eplustbl.htm
+epluszsz.csv
+sqlite.err
+
+# ── EnergyPlus installer binaries (large, platform-specific) ─────────────────
+*.exe
+*.run
+
+# ── EnergyPlus run folders (generated at runtime) ────────────────────────────
+runs/
+
+# ── SQLite database file (generated at runtime) ───────────────────────────────
+data/smartair.db
+data/smartair.db-wal
+data/smartair.db-shm
+*.db
+*.db-wal
+*.db-shm
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+desktop.ini
+
+# ── Frontend build output (built separately in Phase 6) ──────────────────────
+frontend/dist/
+frontend/node_modules/
+frontend/.vite/
+
+# ── Miscellaneous ─────────────────────────────────────────────────────────────
+*.log
+*.bak
+*.tmp
